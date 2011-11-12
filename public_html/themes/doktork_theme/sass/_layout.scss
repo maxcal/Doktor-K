@@ -1,0 +1,62 @@
+/*
+Document   : layout.scss
+Created on : Nov 12, 2011, 4:04:48 PM
+Author     : max.calabrese@greenpeace.org
+Description:
+Purpose of the stylesheet follows.
+Syntax recommendation http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
+*/
+
+.clearfix, .nav, .inner{
+    
+    &:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+    }
+ 
+    * html & {
+	height: 1%;
+    }
+}
+
+.fw {
+}
+.inner {
+    // Master page width
+    width: 960px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 4em;
+    border: 1px dotted red;
+}
+
+.main {
+    border: 1px dotted red;
+}
+
+.footer{
+    border: 1px dotted red;
+}
+.site-nav {
+    border: 1px dotted red;
+    padding: 10px 0
+}
+
+
+ul.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+        padding-right: 1em;
+        float: left;           
+    }
+}
