@@ -34,21 +34,32 @@ Syntax recommendation http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
 
 .header {
     padding-top: 4em;
-    border: 1px dotted red;
+}
+
+.site-title {
+    margin-bottom: 0.2em;
 }
 
 .main {
-    border: 1px dotted red;
+    padding: 15px 0;
 }
 
 .footer{
-    border: 1px dotted red;
+    background-color: #EBF4F7;
 }
 .site-nav {
-    border: 1px dotted red;
     padding: 10px 0
 }
 
+.site-nav {
+    background-color: #E9EFF2;
+}
+
+.openspace {
+    min-height: 360px;
+    background-color: #2B3133;
+    border-bottom: 1px #2F3D42;
+}
 
 ul.nav {
     list-style-type: none;
@@ -57,6 +68,17 @@ ul.nav {
     
     li {
         padding-right: 1em;
-        float: left;           
+        float: left;
+        font-size: 105%;
     }
+    a {
+        font-size: 110%;
+        font-weight: 700;
+        color: #2D4760;
+        
+        &.nav-selected {
+            color: #009FE3;
+                        
+        }  
+    } 
 }
